@@ -62,6 +62,7 @@ def save_address_in_csv(all_address):
         insert_from_csv_2db(r"C:\Users\Nochi\Desktop\mini_corties\urlfiles.csv", "url")
 
     if all_address[2]:
+        name = "reza"
         fields = ["id", "domainn", "created_time", "updated_time", "credibility"]
         filename = "domainfiles.csv"
         with open(filename, 'w', newline='') as csvfile:
