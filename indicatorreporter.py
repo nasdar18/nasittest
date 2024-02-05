@@ -258,6 +258,7 @@ def get_information_from_virustotal(indicator, indicator_type):
         if response.status_code == 200:
             data = response.json()
             data = data["data"]["attributes"]["last_analysis_results"]
+            # useless comment
             for item in data:
                 body = data[item]
                 antiviruses.append(body)
